@@ -1,0 +1,54 @@
+#header1-b H1 {
+  color: #000000;
+}
+#msg-box3-1 .mbr-header .mbr-header__text {
+  text-align: center;
+}
+#msg-box3-1 .mbr-header .mbr-header__subtext {
+  text-align: center;
+}
+#msg-box3-1 .mbr-section-title {
+  color: #ffffff;
+}
+#testimonials1-3 .mbr-section-title {
+  color: #ffffff;
+}
+#msg-box3-c .mbr-header .mbr-header__text {
+  text-align: center;
+}
+#msg-box3-c .mbr-header .mbr-header__subtext {
+  text-align: center;
+}
+#msg-box3-c .mbr-section-title {
+  color: #ffffff;
+}
+#footer1-a P {
+  color: #000000;
+  text-align: center;
+}
+#msg-box4-0 .mbr-section-title {
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+}
+#msg-box4-0 .lead P {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+#msg-box4-0 .lead LI {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+#msg-box4-0 .mbr-section-title B {
+  font-family: 'Raleway', sans-serif;
+  font-size: 46px;
+}
+#msg-box4-0 .btn {
+  font-size: 48px;
+  font-family: 'Playfair Display', sans-serif;
+}
+@font-face {
+    font-family: fiorella_font;
+    src: url(fiorella_font.ttf);
+}
+
