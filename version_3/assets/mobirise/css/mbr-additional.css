@@ -479,7 +479,12 @@ a.text-white:focus {
 }
 a.text-black:hover,
 a.text-black:focus {
-  color: #4d4d4d !important;
+  color: #222 !important;
+  padding: 5px 2px 2px 5px;
+  border: 2px solid #222;
+  transition: border-color 0.2s linear;
+  display: inline-block;
+  line-height: 1em;
 }
 .alert-success {
   background-color: #70c770;
@@ -727,8 +732,8 @@ pre {
   text-decoration: none;
 }
 .cid-qpLayEMNyX .nav-item a {
-  padding: 0.7rem 0 !important;
-  margin: 0rem .65rem !important;
+  /*padding: 0.7rem 0 !important;
+  margin: 0rem .65rem !important;*/
 }
 .cid-qpLayEMNyX .btn {
   padding: 0.4rem 1.5rem;
@@ -1074,7 +1079,17 @@ pre {
 .cid-qpLayEMNyX .nav-link,
 .cid-qpLayEMNyX .dropdown-item {
   font-family: 'Lora', serif;
-  font-size: 14px;
+
+    color: #2a52a2;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 5px 2px 2px 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s linear;
+    display: inline-block;
+    line-height: 1em;
+    
+    
 }
 .cid-qpLayEMNyX .navbar-caption {
   font-size: 24px;
@@ -1193,9 +1208,9 @@ pre {
   height: 70px;
   margin-top: -1.5rem;
   font-size: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #fff;
-  border-radius: 50%;
+  border-radius: 50%;*/
   transition: all .3s;
 }
 .cid-qqqMROhphu .mbr-slider .carousel-control.carousel-control-prev {
