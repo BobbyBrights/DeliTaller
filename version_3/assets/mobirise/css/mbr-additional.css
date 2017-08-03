@@ -42,7 +42,7 @@ body {
 }
 .display-8 {
   font-family: 'Raleway', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color:#552d14;
   line-height: 21px;
 }
@@ -539,7 +539,7 @@ a.text-black:focus {
 }
 a,
 a:hover {
-  color: #149dcc;
+  color: #222;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
@@ -683,13 +683,13 @@ pre {
   position: relative;
   border: 2px solid #c0a375;
   border-color: #149dcc;
-  color: #232323;
+  color: #c0a375;
   cursor: pointer;
 }
 .btn-social i {
   top: 0;
-  line-height: 44px;
-  width: 44px;
+  line-height: 34px;
+  width: 34px;
 }
 .btn-social:hover {
   color: #fff;
@@ -778,7 +778,7 @@ pre {
 .cid-qpLayEMNyX .navbar-toggleable-sm .navbar-collapse {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
-  padding-left: 5.5rem;
+  padding-left: 4rem;
   width: auto;
     
 }
@@ -829,10 +829,12 @@ pre {
   -webkit-transform: translateY(100%);
   z-index: 1000;
 }
-.cid-qpLayEMNyX .navbar.navbar-short {
+
+/*.cid-qpLayEMNyX .navbar.navbar-short {
   min-height: 60px;
   transition: all .2s;
 }
+
 .cid-qpLayEMNyX .navbar.navbar-short .navbar-toggler-right {
   top: 20px;
 }
@@ -849,7 +851,7 @@ pre {
 }
 .cid-qpLayEMNyX .navbar.navbar-short .navbar-brand {
   min-height: 3rem;
-}
+}*/
 .cid-qpLayEMNyX button.navbar-toggler {
   width: 31px;
   height: 18px;
@@ -2174,6 +2176,11 @@ pre {
 .cid-qqwUdrivmi {
   background-image: url("../../../assets/images/img-2-2000x1500.png");
 }
+.cid-qqwUdrivmis {
+  background-image: url("../../../assets/images/img_9.jpg");
+}
+
+
 .cid-qqwUdrivmi h1 {
   color: #616161;
 }
@@ -2259,7 +2266,9 @@ pre {
 .cid-qqs1uk7HFY H5 {
   color: #222222;
   text-align: center;
-    padding-top: 20%;
+  padding-top: 20%;
+  font-weight: lighter;
+
 }
 .cid-qqs1uk7HFY P {
   color: #222222;
@@ -2273,7 +2282,7 @@ pre {
 }
 .cid-qqTVE8Qy5W {
   padding-top: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 5rem;
   background-color: #e9b47e;
 }
 .cid-qqTVE8Qy5W [class^="socicon-"]:before,
@@ -2282,6 +2291,7 @@ pre {
 }
 .cid-qqTVE8Qy5W .btn-social {
   border-color: #231f20;
+  background-color: #231f20;
 }
 .cid-qqTVE8Qy5W .btn-social:hover {
   background: #231f20;

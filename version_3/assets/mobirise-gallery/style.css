@@ -7,7 +7,10 @@
   position: relative;
   display: inline-block;
   width: 25%;
-  cursor: pointer; }
+  cursor: pointer; 
+    border: 0.2rem solid #f4f4e8;
+
+}
 
 @media (max-width: 768px) {
   .mbr-gallery .mbr-gallery-item {
@@ -24,37 +27,54 @@
   font-size: 3rem !important;
   color: #fff;
   opacity: 0;
-  transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in;
   z-index: 5; }
 
-.mbr-gallery .icon-focus::before {
-  content: '\e96b'; }
+.mbr-gallery .icon-focus::before {}
 
 .mbr-gallery .icon-video::before {
   content: '\e95c'; }
 
 .mbr-gallery .mbr-gallery-item > div:hover .icon-focus,
 .mbr-gallery .mbr-gallery-item > div:hover .icon-video {
-  opacity: 1; }
+  opacity: 1;}
 
 .mbr-gallery .mbr-gallery-item img {
   width: 100%;
   opacity: 1;
-  -webkit-transition: .2s opacity ease-in-out;
-  transition: .2s opacity ease-in-out; }
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+        max-width: 100%;
+
+}
+
 
 .mbr-gallery .mbr-gallery-item > div:hover img {
-  opacity: 1; }
+  opacity: 1; 
+ -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
 
 .mbr-gallery .mbr-gallery-item > div {
   background: #fff;
   display: block;
   outline: none;
-  position: relative; }
+  position: relative; 
+  overflow: hidden;
+
+
+}
 
 .mbr-gallery .mbr-gallery-item .icon {
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: .2s opacity ease-in-out;
+  -webkit-transition: .2s opacity ease-in;
   color: #000;
   font-size: 30px;
   height: 69px;
@@ -63,7 +83,7 @@
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in;
   width: 69px; }
 
 .mbr-gallery .mbr-gallery-item .icon::after,
