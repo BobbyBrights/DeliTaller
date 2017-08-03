@@ -1,6 +1,5 @@
 /*!
- * Mobirise v4 theme (https://mobirise.com/)
- * Copyright 2017 Mobirise
+ * 
  */
 section {
   background-color: #eeeeee; }
@@ -143,9 +142,11 @@ section {
   align-content: center;
   -webkit-align-items: start;
   -ms-flex-align: start;
-  align-items: start; }
+  align-items: start; 
+}
   .media-container-row .media-size-item {
-    width: 400px; }
+    width: 100vw; 
+}
 
 .media-container-column {
   display: -ms-flexbox;
@@ -186,7 +187,10 @@ figure[mbr-media-size] {
 
 .card {
   background-color: transparent;
-  border: none; }
+  border: none; 
+ padding: 0;    
+
+}
 
 .card-img {
   text-align: center;

@@ -130,7 +130,8 @@
   content: "\e922";
 }
 .mbri-desktop:before {
-  content: "\e923";
+  /*content: "\e923";*/
+    content: url(recurso_5.png)
 }
 .mbri-devices:before {
   content: "\e924";
@@ -160,7 +161,8 @@
   content: "\e92c";
 }
 .mbri-features:before {
-  content: "\e92d";
+  /*content: "\e92d";*/
+    content: url(recurso_3.png)
 }
 .mbri-file:before {
   content: "\e92e";
@@ -379,7 +381,8 @@
   content: "\e975";
 }
 .mbri-star:before {
-  content: "\e976";
+  /*content: "\e976";*/
+    content: url(recurso_4.png)
 }
 .mbri-success:before {
   content: "\e977";
