@@ -28,7 +28,10 @@
   z-index: 5; }
 
 .mbr-gallery .icon-focus::before {
-  content: '\e96b'; }
+  /*content: '\e96b';*/
+    content: url(butler_waiter.png);
+
+}
 
 .mbr-gallery .icon-video::before {
   content: '\e95c'; }

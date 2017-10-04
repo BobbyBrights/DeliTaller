@@ -439,13 +439,16 @@
  content: "\e926"; 
 }
 .mbri-user:before {
-  content: "\e98a";
+  /*content: "\e98a";*/
+    content:url(icon_copa.png);
 }
 .mbri-user2:before {
-  content: "\e98b";
+  /*content: "\e98b";*/
+    content:url(icon_globo.png);
 }
 .mbri-users:before {
-  content: "\e98c";
+  /*content: "\e98c";*/
+    content:url(icon_plato.png);
 }
 .mbri-video:before {
   content: "\e98d";
