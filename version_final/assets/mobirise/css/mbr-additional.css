@@ -1,6 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
+/*@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);*/
 
-
+@font-face {
+    font-family: 'BentonSans-Medium';
+    font-style: normal;
+    src: local('BentonSans-Medium'),  
+         url(fonts/BentonSans/BentonSans-Medium.otf) format('otf'),
+         url(fonts/woff/BentonSans-Medium.woff) format('woff');
+ 
+}
+@font-face {
+    font-family: 'BentonSans-Book';
+    font-style: normal;
+    src: local('BentonSans-Book'),  
+         url(fonts/BentonSans/BentonSans-Book.otf) format('otf'),
+         url(fonts/woff/BentonSans-Medium.otf) format('woff');
+ 
+}
 
 
 
@@ -20,29 +35,31 @@ body {
   line-height: 1.6;
 }
 .display-1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 4.25rem;
+  font-family: 'BentonSans-Medium', sans-serif;
+  font-size: 3.25rem;
+    
 }
 .display-1 > .mbr-iconfont {
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'BentonSans-Book', sans-serif;
   font-size: 3rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
+  font-family: 'BentonSans-Medium', sans-serif;
+  font-size: 14px;
 }
 .display-4 > .mbr-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'BentonSans-Book', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
@@ -1256,6 +1273,7 @@ body {
   background: #222222;
   transition: none;
   min-height: 77px;
+  opacity: 0.8;    
 }
 .cid-qx1KOteKrs .navbar-dropdown.bg-color.transparent.opened {
   background: #222222;
@@ -1645,7 +1663,7 @@ body {
   line-height: 27px;
 }
 .cid-qx1ONp65oR .carousel-control:hover {
-  background: #1b1b1b;
+  background: #222;
   color: #fff;
   opacity: 1;
 }
@@ -1740,8 +1758,8 @@ body {
   height: 70px;
   margin-top: -1.5rem;
   font-size: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid #fff;
+  /*background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;*/
   border-radius: 50%;
   transition: all .3s;
 }
@@ -1865,8 +1883,8 @@ body {
   z-index: auto;
 }
 .cid-qx1Xmwwr4R {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #f4f3e8;
 }
 @media (min-width: 992px) {
@@ -1889,7 +1907,7 @@ body {
   color: #514845;
 }
 .cid-qx1Xmwwr4R H1 {
-  color: #514845;
+  color: #fff;
 }
 .cid-qx2lQCz6s6 {
   background-image: url("../../../assets/images/img-break-1-1280x960.jpg");
@@ -1901,10 +1919,30 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #8aced0;
-    background-image: url("../../../assets/images/patron%20fondo.png");
+    background-image: url("../../../assets/images/patron.png");
     background-position: 0% 50%;
      background-repeat: repeat;
     background-size: auto; 
+}
+.cid-qx2myyPnCP_2 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #8aced0;
+    background-image: url("../../../assets/images/patron.png");
+    background-position: 0% 50%;
+     background-repeat: repeat;
+    background-size: auto;
+    max-width: 50%;
+}
+.cid-qx2myyPnCP_3 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f4f3e8;
+    background-position: 0% 50%;
+     background-repeat: repeat;
+    background-size: auto;
+    max-width: 50%;
+    float:right;
 }
 .cid-qx2mvWYRBw {
   padding-top: 90px;

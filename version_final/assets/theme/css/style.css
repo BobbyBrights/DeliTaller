@@ -123,7 +123,8 @@ section {
 
 .media-content {
   -webkit-flex-basis: 100%;
-  flex-basis: 100%; }
+  flex-basis: 100%; 
+}
 
 .media-container-row {
   display: -ms-flexbox;
@@ -141,9 +142,10 @@ section {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-align-items: start;
-  -ms-flex-align: start;
-  align-items: start; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; 
+}
   .media-container-row .media-size-item {
     width: 400px; }
 

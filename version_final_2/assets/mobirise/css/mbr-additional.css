@@ -1,0 +1,442 @@
+@import url(../../../null);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+
+
+
+
+
+
+
+
+
+@primaryColor: #514845;
+@secondaryColor: #bfcecb;
+@successColor: #90a878;
+@infoColor: #7e9b9f;
+@warningColor: #f3c649;
+@dangerColor: #f28281;
+@titleFont: 'BentonSans-Medium';
+@subtitleFont: 'BentonSans-Medium';
+@textFont: 'BentonSans-Medium';
+@isRoundedButtons: false;
+@isAnimatedOnScroll: true;
+@isScrollToTopButton: true;
+@isRtl: false;
+// MIXINS
+
+.button-variant(@background) {
+
+    @color: #fff;
+    @border: @background;
+
+    @active-background: if(
+        eq(@background, @color),
+        #d4d4d4,
+        darken(@background, 15%)
+    );
+    @active-color: @color;
+    @active-border: @active-background;
+
+    background-color: @background;
+    border-color: @border;
+    color: @color;
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        color: @active-color;
+        background-color: @active-background;
+        border-color: @active-border;
+    }
+
+    &.disabled, &:disabled {
+        color: @active-color !important;
+        background-color: @active-background !important;
+        border-color: @active-border !important;
+    }
+
+}
+
+.button-outline-variant(@color) {
+
+    @active-color: #fff;
+    @active-background: @color;
+    @new-color: if(
+        eq(@color, @active-color),
+        #fff,
+        darken(@color, 20%)
+    );
+
+    background: none;
+    border-color: @new-color;
+    color: @new-color;
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        color: @active-color;
+        background-color: @active-background;
+        border-color: @active-background;
+    }
+
+    &.disabled, &:disabled {
+        color: @active-color !important;
+        background-color: @active-background !important;
+        border-color: @active-background !important;
+    }
+
+}
+
+.plan-variant(@className, @color) {
+    &@{className} {
+        .mbr-plan-subtitle,
+        .mbr-plan-price-desc {
+            @max: max(red(@color), green(@color), blue(@color));
+            & when (@max > 200) {
+                color: lighten(@color, 40%);
+            }
+            & when (@max > 85) and (@max <= 200) {
+                color: lighten(@color, 25%);
+            }
+            & when (@max > 50) and (@max <= 85) {
+                color: lighten(@color, 45%);
+            }
+            & when (@max <= 50) {
+                color: lighten(@color, 70%);
+            }
+        }
+    }
+}
+
+.subtitleFont() {
+    font-family: @subtitleFont;
+    & when not(includes(@subtitleFont, 'Lora')) {
+        font-style: normal;
+    }
+}
+
+body, input, textarea,
+.mbr-company .list-group-text {
+    font-family: @textFont;
+}
+.mbr-footer-content, .mbr-footer .mbr-contacts {
+    li {
+        font-family: @textFont;
+    }
+}
+
+.btn, .alert,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4,
+.mbr-figure .mbr-figure-caption,
+.mbr-gallery-title,
+.mbr-map [data-state-details],
+.mbr-price {
+    font-family: @titleFont;
+}
+
+.mbr-footer-content,
+.mbr-footer .mbr-contacts {
+    h1, h2, h3, h4,
+    p strong, strong {
+        font-family: @titleFont;
+    }
+}
+
+.btn when(@isRoundedButtons) {
+    border-radius: 1.6em;
+}
+
+.mbr-subscribe .btn when(@isRoundedButtons) {
+    border-radius: 1.6em !important;
+}
+
+.btn-sm,
+.lead a, .lead blockquote,
+.mbr-section-subtitle,
+.mbr-section-hero .mbr-section-lead,
+.mbr-cards .card-subtitle,
+.mbr-testimonial .card-block {
+    .subtitleFont();
+}
+
+.mbr-author {
+    &-name { font-family: @titleFont; }
+    &-desc { .subtitleFont(); }
+}
+
+.mbr-plan {
+    &-title { font-family: @titleFont; }
+    &-subtitle, &-price-desc {
+        .subtitleFont();
+    }
+}
+
+.bg-primary { background-color: @primaryColor !important; }
+.bg-success { background-color: @successColor !important; }
+.bg-info { background-color: @infoColor !important; }
+.bg-warning { background-color: @warningColor !important; }
+.bg-danger { background-color: @dangerColor !important; }
+
+.btn-primary { .button-variant(@primaryColor); }
+.btn-secondary { .button-variant(@secondaryColor); }
+.btn-info { .button-variant(@infoColor); }
+.btn-success { .button-variant(@successColor); }
+.btn-warning { .button-variant(@warningColor); }
+.btn-danger { .button-variant(@dangerColor); }
+
+.btn-primary-outline { .button-outline-variant(@primaryColor); }
+.btn-secondary-outline { .button-outline-variant(@secondaryColor); }
+.btn-info-outline { .button-outline-variant(@infoColor); }
+.btn-success-outline { .button-outline-variant(@successColor); }
+.btn-warning-outline { .button-outline-variant(@warningColor); }
+.btn-danger-outline { .button-outline-variant(@dangerColor); }
+
+.text-primary { color: @primaryColor !important; }
+.text-success { color: @successColor !important; }
+.text-info { color: @infoColor !important; }
+.text-warning { color: @warningColor !important; }
+.text-danger { color: @dangerColor !important; }
+
+.alert-success { background-color: @successColor; }
+.alert-info { background-color: @infoColor; }
+.alert-warning { background-color: @warningColor; }
+.alert-danger { background-color: @dangerColor; }
+
+.btn-social {
+    border-color: @primaryColor;
+    &:hover { background: @primaryColor; }
+}
+
+.mbr-company .list-group-item.active .list-group-text {
+    color: @primaryColor;
+}
+
+.mbr-footer {
+    p, ul {
+        a {
+            color: @primaryColor;
+        }
+    }
+}
+.mbr-footer-content, .mbr-footer .mbr-contacts {
+    li {
+        &::before { background: @primaryColor; }
+        a:hover { color: @primaryColor; }
+    }
+}
+
+.lead {
+    a, a:hover { color: @primaryColor; }
+    blockquote { border-color: @primaryColor; }
+ }
+
+.mbr-plan-header {
+    .plan-variant(~'.bg-primary', @primaryColor);
+    .plan-variant(~'.bg-success', @successColor);
+    .plan-variant(~'.bg-info', @infoColor);
+    .plan-variant(~'.bg-warning', @warningColor);
+    .plan-variant(~'.bg-danger', @dangerColor);
+}
+
+.mbr-small-footer a,
+.mbr-gallery-filter li:hover {
+    color: @primaryColor;
+}
+
+.scrollToTop_wraper when not(@isScrollToTopButton) {
+    opacity: 0 !important;
+}
+@isPublish: true;
+
+#ext_menu-i {
+.hide-buttons .nav-btn {
+  display: none !important;
+}
+.navbar-caption {
+  color: #ffffff;
+}
+.navbar-toggler {
+  color: #ffffff;
+}
+.close-icon::before, .close-icon::after {
+  background-color: #ffffff;
+}
+.link, .dropdown-item {
+  color: #ffffff;
+  font-family: 'BentonSans-Medium';
+}
+.link {
+  font-size: 2.45rem;
+}
+.dropdown-item, .nav-dropdown-sm .link {
+  font-size: 2.653rem;
+}
+.link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus {
+  color: #514845;
+}
+.link[aria-expanded="true"], .dropdown-menu {
+  background: #0e0e0e;
+}
+.nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover {
+  background: #202020!important;
+}
+.navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded="true"], .nav-dropdown-sm .dropdown-menu {
+  background: #282828;
+}
+.bg-color.transparent .link {
+  color: #ffffff;
+  transition: none;
+}
+.bg-color.transparent.opened .link {
+  transition: color .2s ease-in-out;
+}
+.bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus {
+  color: #514845;
+}
+.link[aria-expanded="true"], .dropdown-item[aria-expanded="true"] {
+  color: #514845!important;
+}
+}
+
+#slider-2 {
+H2 {
+  font-family: 'BentonSans-Medium';
+  font-size: 60px;
+  color: #f4f3e8;
+}
+}
+
+#features1-0 {
+.striped .mbr-cards-col:nth-child(2n+1) {
+  background-color: #8aced0;
+}
+.mbr-cards-col:nth-child(odd) .card-title {
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.mbr-cards-col:nth-child(odd) .card-title SPAN {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+}
+.mbr-cards-col:nth-child(even) .card-text {
+  text-align: right;
+  font-family: 'BentonSans-Medium';
+  color: #514845;
+}
+}
+
+#header1-j {
+}
+
+#msg-box8-4 {
+.mbr-section-title, p {
+  color: #fff;
+}
+.mbr-section-title {
+  color: #f4f3e8;
+}
+.mbr-section-title SPAN {
+  color: #ffffff;
+}
+}
+
+#features2-5 {
+.striped .mbr-cards-col:nth-child(2n+1) {
+  background-color: #f4f3e8;
+}
+.mbr-cards-col:nth-child(even) .card-title {
+  color: #514845;
+}
+.mbr-cards-col:nth-child(even) .card-text {
+  color: #514845;
+}
+.mbr-cards-col:nth-child(odd) .card-text {
+  text-align: right;
+  color: #514845;
+}
+}
+
+#header1-l {
+}
+
+#features1-k {
+.striped .mbr-cards-col:nth-child(2n+1) {
+  background-color: #8aced0;
+}
+.mbr-cards-col:nth-child(odd) .card-title {
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.mbr-cards-col:nth-child(odd) .card-title SPAN {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+}
+.mbr-cards-col:nth-child(even) .card-text {
+  text-align: right;
+  font-family: 'BentonSans-Medium';
+  color: #514845;
+}
+}
+
+#slider-8 {
+}
+
+#gallery3-9 {
+}
+
+#header1-b {
+.mbr-section-lead {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+}
+.mbr-section-lead SPAN {
+  font-family: 'Raleway', sans-serif;
+}
+}
+
+#form1-c {
+.form-control-label {
+  color: #514845;
+}
+.btn {
+  font-size: 14px;
+  font-family: 'BentonSans-Medium';
+}
+}
+
+#contacts1-d {
+STRONG {
+  color: #514845;
+}
+P {
+  color: #514845;
+  text-align: center;
+}
+}
+
+#social-buttons4-n {
+.mbr-section-title, .btn-social {
+  color: #fff;
+}
+.mbr-section-title {
+  color: #514845;
+  font-size: 36px;
+  text-align: right;
+}
+}
+
+#footer1-e {
+P {
+  color: #ffffff;
+}
+}
