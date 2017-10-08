@@ -69,7 +69,10 @@
     width: 16px;
     -webkit-box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px;
     -moz-box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px;
-    box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px; }
+    box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px; 
+      color:#8aced0;
+
+}
   .navbar-dropdown .close-icon {
     position: relative;
     width: 21px;
@@ -223,7 +226,10 @@
     -ms-transform: translateX(0);
     -webkit-transform: translateX(0);
     transition: all 0.25s ease-out;
-    -webkit-transition: all 0.25s ease-out; }
+    -webkit-transition: all 0.25s ease-out;
+      background-color: #222;
+
+}
   .nav-dropdown-sm.collapsing[aria-expanded="false"] {
     transform: translateX(-100%);
     -ms-transform: translateX(-100%);

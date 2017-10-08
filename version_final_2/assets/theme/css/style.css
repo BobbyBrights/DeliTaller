@@ -89,8 +89,8 @@
 
   .btn-primary:hover {
     color: #fff;
-    background-color: #a07e49;
-    border-color: #a07e49;  
+    background-color: #8aced0;
+    border-color: #8aced0;  
     box-shadow: 0px 0px 50px #222;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -1133,9 +1133,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   top: 50%;
   margin-top: -35px;
   line-height: 70px;
-  border-radius: 50%;
+  border-radius: 0;
   color: inherit;
-  background: #1b1b1b;
+  /*background: #1b1b1b;*/
   border: 0;
   opacity: 0.5;
   text-shadow: none;
@@ -2090,7 +2090,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   display: none; }
 
 .navbar-toggler {
-  position: relative; }
+  position: relative; 
+  
+
+}
 
 /*-------
 
