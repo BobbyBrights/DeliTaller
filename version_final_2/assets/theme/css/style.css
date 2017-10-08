@@ -1,3 +1,37 @@
+/*!
+ * 
+ * Copyright 2017 Delitaller.com
+ *
+ */
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f3f4e8;
+  background-image: url(../../images/logo-marron-con-firma-128x140.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  z-index: 9999;/* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%; /* centers horizontally */
+  top: 80%; /* centers vertically */
+  background-image: url(../../images/preloader.gif);/* loading gif */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;/* is width and height divided by two */
+}
+
 
 .marco{
     border:1px solid white;
@@ -7,13 +41,6 @@
     padding:2rem;
 }
 
-
-
-/*!
- * 
- * Copyright 2017 Delitaller.com
- *
- */
 .container {
   position: relative; }
 
@@ -636,7 +663,10 @@ p.lead,
  */
 body {
   font-family: 'BentonSans-Medium', sans-serif;
-  color: #232323; }
+  color: #232323; 
+  overflow: hidden;
+
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
