@@ -124,7 +124,6 @@ you can use the generic selector below, but it's slower:
 }
 .icon-focus:before {
 	/*content: "\e01b";*/
-    content: url(butler_waiter.png);
 }
 .icon-edit:before {
 	content: "\e01c";

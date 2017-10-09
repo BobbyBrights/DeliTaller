@@ -38,9 +38,6 @@
 
 .mbr-gallery .icon-focus::before {
   /*content: '\e01b';*/
-    content: url(butler_waiter.png);
-  color: #8ACED3;
-  position: absolute;
 }
 
 .mbr-gallery .mbr-gallery-item {
