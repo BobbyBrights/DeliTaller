@@ -967,11 +967,11 @@
             "overlayColor": "#222",
             "overlayOpacity": 0.5
           },
-          "title": "<span style=\"font-weight: normal;\">SOLICITA PRESUPUESTO</span>",
+          "title": "<span style=\"font-weight: normal;\">COTIZA CON NOSOTROS</span>",
           "subtitle": "Shape your future web project with sharp design and refine coded functions.",
           "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-primary\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">ENVIAR</a>",
           "form": {
-            "action": "cronoscopios@gmail.com",
+            "action": "mail.php",
             "alerts": {
               "success": "¡Gracias! A la brevedad nos pondremos en contacto."
             },
