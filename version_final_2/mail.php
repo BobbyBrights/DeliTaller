@@ -21,10 +21,6 @@ $destinatario = "cronoscopios@gmail.com";
 $subject = "Consulta desde dellitaller.com";
 $mailheader = "From: $email \r\n";
 mail($destinatario, $subject, $formcontent, $mailheader) or die("Error!");
-echo 
-
-"<div data-form-alert='true'>
- <div hidden='' data-form-alert-success='true' class='alert alert-form alert-success text-xs-center'>¡Gracias! A la brevedad nos pondremos en contacto.</div>
-</div>";
-
+echo "Gracias! A la brevedad nos contactaremos" . " -" . "<a href='index.html' style='text-decoration:none;color:#222;'>  Regresar</a>";
 ?>
+
