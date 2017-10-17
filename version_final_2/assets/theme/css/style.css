@@ -832,9 +832,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   .mbr-section-hero.mbr-section-with-arrow .mbr-section {
     padding-bottom: 120px; }
   .mbr-section-hero .mbr-section-title {
-    font-size: 3.125rem !important; }
+    font-size: 3.125rem !important; 
+    }
   .mbr-section-hero .mbr-section-lead {
-    font-size: 1.125rem !important; }
+    font-size: 1.125rem !important; 
+    line-height: 40px !important;
+    }
   .mbr-section-hero .mbr-section-btn .btn {
     font-size: 0.75rem !important;
     line-height: 1.5;
@@ -1354,10 +1357,23 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing:;
   line-height: 1.2825; 
     color: #552d14;
 }
+
+/* media query for Iphone */
+
+@media (max-width: 768px) {
+.mbr-cards .card-title{
+  font-size: 1rem !important;
+    }
+    .display-2 .marco{
+  font-size: 2rem !important;    
+    }   
+}
+
+/* end media query for Iphone */
+
   .mbr-cards .card-title + * {
     padding-top: 1rem; }
   .mbr-cards .card-title + .card-btn {
