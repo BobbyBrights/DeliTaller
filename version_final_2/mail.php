@@ -17,7 +17,7 @@ $formcontent= " From: $nombre \n
                 Fecha: $fecha \n 
                 Mensaje: $mensaje ";
 
-$destinatario = "cronoscopios@gmail.com";
+$destinatario = "fiorella@delitaller.com";
 $subject = "Consulta desde dellitaller.com";
 $mailheader = "From: $email \r\n";
 mail($destinatario, $subject, $formcontent, $mailheader) or die("Error!");
