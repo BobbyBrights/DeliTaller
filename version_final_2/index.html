@@ -32,8 +32,8 @@
   <link rel="stylesheet" href="assets/fonts/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css">
   
-  
-  
+  <!-- reCAPTCHA -->
+  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
 <body>
 
@@ -733,7 +733,12 @@
                             <textarea class="form-control placeholder" name="mensaje" rows="7" data-form-field="Message" id="form1-c-message" placeholder="¿Cuéntanos mas sobre tu evento?"></textarea>
                         </div>
 
-                        <div><button type="submit" class="btn btn-primary">ENVIAR</button></div>
+                        <div>
+                           <div style="float:right;" data-theme="white" class="g-recaptcha" data-sitekey="6LcifTgUAAAAAIFQnJNj3r5dwWCLJn57RdDjJaf9"></div>
+                           <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        </div>
+                        
+
 
                     </form>
                 </div>
