@@ -32,8 +32,6 @@
   <link rel="stylesheet" href="assets/fonts/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css">
   
-  <!-- reCAPTCHA -->
-  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
 <body>
 
@@ -684,20 +682,20 @@
 
                     <form action="mail.php" method="post" data-form-title="COTIZA CON NOSOTROS">
 
-                        <input type="hidden" value="pZjeNNX/pp5QNut0sZX9OBmOQXVHf3V1YQdvb92nLfh3wlTDtNt/orrGzPmyLP77Fw+zeI9PiUo13xahpzOKCDlDKRPR5Jg+gLAYdFDMGJ8K5PHYacJMBj/oboZjhVKQ" data-form-email="true">
+                        <!-- input bot -->
+                        <input type="email" name="email" value="" data-form-email="false" style="display:none;">
 
                         <div class="row row-sm-offset">
 
                             <div class="col-xs-12 col-md-4">
-                                <div class="form-group">
-                                    
+                                <div class="form-group">  
                                     <input type="text" class="form-control placeholder" name="nombre" required="true" data-form-field="nombre" id="form1-c-name" placeholder="¿Cuál es tu nombre?*">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <input type="email" class="form-control placeholder" name="email" required="true" data-form-field="email" id="form1-c-email" placeholder="¿Cuál es tu Email?*">
+                                    <input type="email" class="form-control placeholder" name="contacEmail" required="true" data-form-field="email" id="form1-c-email" placeholder="¿Cuál es tu Email?*">
                                 </div>
                             </div>
 
@@ -733,13 +731,13 @@
                             <textarea class="form-control placeholder" name="mensaje" rows="7" data-form-field="Message" id="form1-c-message" placeholder="¿Cuéntanos mas sobre tu evento?"></textarea>
                         </div>
 
-                        <div>
-                           <div style="float:right;" data-theme="white" class="g-recaptcha" data-sitekey="6LcifTgUAAAAAIFQnJNj3r5dwWCLJn57RdDjJaf9"></div>
+                        <div class="col-xs-2">
+                            <label for="contact_captcha">1 + 1 =</label>
+                            <input type="text" name="captcha" id="captcha" class="form-control"/>
+                            <br>
+
                            <button type="submit" class="btn btn-primary">ENVIAR</button>
                         </div>
-                        
-
-
                     </form>
                 </div>
             </div>
