@@ -680,10 +680,10 @@
                     </div>
 
 
-                    <form action="mail.php" method="post" data-form-title="COTIZA CON NOSOTROS">
+                    <form action="https://mobirise.com/" method="post" data-form-title="COTIZA CON NOSOTROS">
 
                         <!-- input bot -->
-                        <input type="email" name="email" value="" data-form-email="false" style="display:none;">
+                        <input type="hidden" value="pSGXNqNhGBCKZe6+0wFVi4tUrDMcVn6a10qWO8uMgr3WyQgOYvYGfPar8f6Dt5lbS/8/GUORSIxfAFOsJpL1wCuZZoKkOWxMToR7KIrpfbStm3PFPfpt/YBR67KWQikX" data-form-email="true">
 
                         <div class="row row-sm-offset">
 
@@ -695,18 +695,18 @@
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <input type="email" class="form-control placeholder" name="contacEmail" required="true" data-form-field="email" id="form1-c-email" placeholder="¿Cuál es tu Email?*">
+                                    <input type="email" class="form-control placeholder" name="email" required="true" data-form-field="email" id="form1-c-email" placeholder="¿Cuál es tu Email?*">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <input type="tel" class="form-control placeholder" name="tel" data-form-field="tel" id="form1-c-phone" placeholder="¿Cuál es tu teléfono?">
+                                    <input type="tel" class="form-control placeholder" name="tel" required="true" data-form-field="tel" id="form1-c-phone" placeholder="¿Cuál es tu teléfono?">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control placeholder" name="tipo_evento" data-form-field="evento" id="form1-c-evento" placeholder="¿Qué tipo de evento tienes en mente?">
+                                    <input type="text" class="form-control placeholder" name="tipo_evento" required="true" data-form-field="evento" id="form1-c-evento" placeholder="¿Qué tipo de evento tienes en mente?">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-4">
@@ -728,15 +728,11 @@
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control placeholder" name="mensaje" rows="7" data-form-field="Message" id="form1-c-message" placeholder="¿Cuéntanos mas sobre tu evento?"></textarea>
+                            <textarea class="form-control placeholder" name="mensaje" rows="7" required="true" data-form-field="Message" id="form1-c-message" placeholder="¿Cuéntanos mas sobre tu evento?"></textarea>
                         </div>
 
-                        <div class="col-xs-2">
-                            <label for="contact_captcha">1 + 1 =</label>
-                            <input type="text" name="captcha" id="captcha" class="form-control"/>
-                            <br>
-
-                           <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        <div>
+                            <button name="submit" id="submit" type="submit" class="btn btn-primary">ENVIAR</button>
                         </div>
                     </form>
                 </div>
@@ -823,7 +819,7 @@ Teléfono:<a href="tel:949698191"> 949 698 191</a><br></p>
   <script src="assets/theme/js/preloader.js"></script>
   <script src="assets/mobirise-gallery/player.min.js"></script>
   <script src="assets/mobirise-gallery/script.js"></script>
-  <!--<script src="assets/formoid/formoid.min.js"></script>-->
+  <script src="assets/formoid/formoid.min.js"></script>
   
   
   <input name="animation" type="hidden">
